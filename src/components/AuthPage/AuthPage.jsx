@@ -69,7 +69,6 @@ function AuthPage() {
           <WiStars className={styles.labelIcons} />
           <input
             className={styles.authInput}
-            title="Enter min. 8 characters, 1 number, 1 uppercase letter and 1 lowercase letter"
             type="text"
             name="password"
             value={password}
