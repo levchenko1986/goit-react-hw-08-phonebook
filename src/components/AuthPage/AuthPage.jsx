@@ -28,6 +28,7 @@ function AuthPage() {
         return;
     }
   };
+  
   const handleSubmit = e => {
     e.preventDefault();
     authType === 'login' && dispatch(login({ email, password }));
@@ -68,11 +69,15 @@ function AuthPage() {
           <WiStars className={styles.labelIcons} />
           <input
             className={styles.authInput}
+            title="Enter min. 8 characters, 1 number, 1 uppercase letter and 1 lowercase letter"
             type="text"
             name="password"
             value={password}
             onChange={handleChange}
             placeholder="Enter your password"
+            pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"
+            title="Введите минимум 8 символов, одна цифра, одна буква в верхнем регистре и одна в нижнем"
+            required
           />
         </label>
         <button className={styles.authBtn} type="submit">
@@ -82,4 +87,8 @@ function AuthPage() {
     </div>
   );
 }
+
 export default AuthPage;
+
+
+
