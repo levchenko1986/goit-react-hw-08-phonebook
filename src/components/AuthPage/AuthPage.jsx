@@ -76,7 +76,6 @@ function AuthPage() {
             onChange={handleChange}
             placeholder="Enter your password"
             pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"
-            title="Введите минимум 8 символов, одна цифра, одна буква в верхнем регистре и одна в нижнем"
             required
           />
         </label>
