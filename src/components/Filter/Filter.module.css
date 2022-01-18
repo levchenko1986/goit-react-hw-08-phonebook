@@ -2,13 +2,13 @@
   border: 1px solid transparent;
   padding: 10px;
   display: block;
-  /* margin-top: 5px; */
   margin: 5px auto;
   width: 80%;
   background-color: var(--input-bg-color);
   border-radius: 5px;
   font-size: var(--placeholder-font-size);
 }
+
 .seacrhInput[placeholder] {
   font-size: var(--placeholder-font-size);
   color: #0f1f38;
@@ -16,9 +16,11 @@
   border-radius: 6px;
   background-color: var(--input-bg-color);
 }
+
 .filterForm {
   width: 100%;
 }
+
 .seacrhInput:hover,
 .seacrhInput:active,
 .seacrhInput:focus-within {
@@ -26,31 +28,16 @@
   color: var(--hover-color);
   cursor: pointer;
 }
-@media screen and (min-width: 568px) {
-  .seacrhInput {
-    width: 60%;
-    margin: 5px 0;
-  }
-}
-@media screen and (min-width: 700px) {
-  .filterForm {
-    width: 620px;
-  }
-  .seacrhInput {
-    width: 40%;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .filterForm {
-    width: 650px;
-    margin-left: 233px;
-    margin-bottom: 35px;
-    
-  }
-  .seacrhInput {
-    width: 48%;
-    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 1px rgb(0 0 0 / 14%), 0 2px 1px rgb(0 0 0 / 20%);
-    transition: all 250ms var(--time-cubic);
-  }
 
+.filterForm {
+  width: 650px;
+  margin-left: 233px;
+  margin-bottom: 35px;
+}
+
+.seacrhInput {
+  width: 48%;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 1px rgb(0 0 0 / 14%),
+    0 2px 1px rgb(0 0 0 / 20%);
+  transition: all 250ms var(--time-cubic);
 }

@@ -2,26 +2,25 @@
   position: relative;
   padding: 30px 35px;
   text-align: center;
-  animation: all 5s infinite alternate;
-
+  animation: all 5000ms infinite alternate;
 }
 
 @keyframes all {
   0% {
-  opacity: 0;
-  border-radius: 50%;
+    opacity: 0;
+    border-radius: 50%;
   }
   20% {
-  opacity: 0.2;
-  border-radius: 40%;
+    opacity: 0.2;
+    border-radius: 40%;
   }
   50% {
-  opacity: 0.5;
-  border-radius: 30%;
+    opacity: 0.5;
+    border-radius: 30%;
   }
-  
+
   100% {
-  opacity: 1;
-  border-radius: 0;
+    opacity: 1;
+    border-radius: 0;
   }
-  }
+}

@@ -27,7 +27,7 @@ export default function Menu({ isAuth, dispatch }) {
       <ul className={styles.authList}>
         {isAuth === true ? (
           <>
-            <li className={styles.authItem}>
+            <li>
               <button
                 type="button"
                 className={(styles.authLinks, styles.OutLink)}
@@ -42,13 +42,13 @@ export default function Menu({ isAuth, dispatch }) {
           </>
         ) : (
           <>
-            <li className={styles.authItem}>
+            <li>
               <Link className={styles.authLinks} to={'/auth/register'}>
                 <AiTwotoneRocket className={styles.headerIcon} />
                 Sign up
               </Link>
             </li>
-            <li className={styles.authItem}>
+            <li>
               <Link to={'/auth/login'} className={styles.authLinks}>
                 <AiOutlineLogin className={styles.headerIcon} />
                 Log in

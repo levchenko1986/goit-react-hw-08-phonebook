@@ -32,13 +32,14 @@ function ContactForm() {
     setNumber('');
   };
   return (
-    <form onSubmit={handleSubmit} className={styles.contactsForm}>
+    <form onSubmit={handleSubmit} className={styles.contactForm}>
       <label className={styles.label}>
         Name
         <input
           className={styles.input}
           type="text"
           name="name"
+          placeholder="Name"
           value={name}
           autoComplete="off"
           onChange={handleChange}
@@ -53,6 +54,7 @@ function ContactForm() {
           className={styles.input}
           type="tel"
           name="number"
+          placeholder="Number"
           value={number}
           autoComplete="off"
           onChange={handleChange}
@@ -61,7 +63,7 @@ function ContactForm() {
           required
         />
       </label>
-      <button type="submit" className={styles.contactsFormBtn}>
+      <button type="submit" className={styles.contactFormBtn}>
         Add contact
       </button>
     </form>

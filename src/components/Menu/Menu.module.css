@@ -6,13 +6,13 @@
   position: relative;
   text-transform: uppercase;
   margin: 30px;
-
 }
 
 ul {
   display: flex;
   justify-content: space-between;
 }
+
 .homePageLink {
   display: inline-block;
   text-decoration: none;
@@ -29,6 +29,7 @@ ul {
   text-decoration: none;
   transition: all 250ms var(--time-cubic);
 }
+
 .homePageLink:hover,
 .homePageLink:active,
 .authLinks:hover,
@@ -47,7 +48,6 @@ ul {
   transition: all 250ms var(--time-cubic);
 }
 .authList {
-  /* position: relative; */
   display: flex;
   justify-content: space-between;
   width: 200px;
@@ -55,9 +55,7 @@ ul {
   margin: 0;
   padding: 0;
 }
-.authItem {
 
-}
 .authLinks,
 .OutLink {
   padding: 5px 10px;
@@ -65,9 +63,9 @@ ul {
   color: var(--main-color);
   border-radius: var(--input-border-radius);
 }
+
 .OutLink {
   background: none;
-  /* position: absolute; */
   color: var(--main-color);
   border: none;
   bottom: auto;
@@ -81,11 +79,11 @@ ul {
   color: var(--input-bg-color);
   transition: all 250ms var(--time-cubic);
 }
+
 .headerIcon {
   position: relative;
   right: 5px;
   top: 2px;
   visibility: visible;
-  transition: visibility 250ms ease-out;
+  transition: all 250ms ease-out;
 }
-

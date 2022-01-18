@@ -9,54 +9,56 @@
   color: var(--main-color);
   background-color: transparent;
 }
+
 .btnDelete:hover,
 .btnDelete:active {
   color: #504d4d;
 }
-.ContactListSpan {
+
+.contactListSpan {
   margin: 10px 0;
   display: block;
 }
-.ContactListSpan:nth-of-type(2) {
+
+.contactListSpan:nth-of-type(2) {
   margin-top: 30px;
 }
-.ContactList {
+
+.contactList {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
   margin-top: 20px;
 }
-.ContactListItem {
+
+.contactListItem {
   border: 1px solid var(--border-color);
   border-radius: 10px;
   text-align: center;
   background-color: var(--input-bg-color);
   height: 100px;
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 30px * 4) / 4);
 }
-.ContactListIconSpan {
+
+.contactListIconSpan {
   display: block;
   position: relative;
   top: -27px;
   left: -12%;
   margin-bottom: 10px;
 }
-.ContactListIcon {
+
+.contactListIcon {
   font-size: 50px;
   position: absolute;
 }
-.ContactListItem:hover {
+
+.contactListItem:hover {
   border-bottom: 1px solid var(--hover-color);
-  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 1px rgb(0 0 0 / 14%), 0 2px 1px rgb(0 0 0 / 20%);
-}
-
-
-.ContactList {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
-}
-
-.ContactListItem {
-  margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc((100% - 30px * 4) / 4);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 1px rgb(0 0 0 / 14%),
+    0 2px 1px rgb(0 0 0 / 20%);
 }
