@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import ContactForm from '../ContactForm/ContactForm';
-import Filter from '../Filter/Filter';
-import ContactList from '../ContactList/ContactList';
+import ContactForm from '../../components/ContactForm/ContactForm';
+import Filter from '../../components/Filter/Filter';
+import ContactList from '../../components/ContactList/ContactList';
 import { getAllContacts } from '../../redux/contacts/contacts-operations';
 import { getLoading } from '../../redux/contacts/contacts-selectors';
 import styles from '../PhonebookHome/PhonebookHome.module.css';

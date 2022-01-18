@@ -3,8 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import styles from './App.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import Header from './components/Header/Header';
-import PrivateRoute from './components/PrivateRoute/PrivateRoute';
-import PublicRoute from './components/PublicRoute/PublicRoute';
+import PrivateRoute from './routes/PrivateRoute/PrivateRoute';
+import PublicRoute from './routes/PublicRoute/PublicRoute';
 
 import { fetchCurrentUser } from './redux/authorization/auth-operations';
 import {
@@ -13,11 +13,11 @@ import {
   getIsAuth,
 } from './redux/authorization/auth-selectors';
 import UserMenu from 'components/UserMenu/UserMenu';
-const HomePage = lazy(() => import('components/HomePage/HomePage.jsx'));
+const HomePage = lazy(() => import('pages/HomePage/HomePage.jsx'));
 const PhonebookHome = lazy(() =>
-  import('components/PhonebookHome/PhonebookHome.jsx'),
+  import('pages/PhonebookHome/PhonebookHome.jsx'),
 );
-const AuthPage = lazy(() => import('components/AuthPage/AuthPage.jsx'));
+const AuthPage = lazy(() => import('pages/AuthPage/AuthPage.jsx'));
 function App() {
   const dispatch = useDispatch();
   const isCurrentUser = useSelector(getIsCurrentUser);
