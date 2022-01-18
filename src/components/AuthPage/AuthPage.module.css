@@ -1,0 +1,98 @@
+.formWrap {
+  border-radius: 15px;
+  display: block;
+  padding: 20px 30px;
+  width: 100%;
+  margin-top: -30px;
+}
+.authForm h1 {
+  font-size: 16px;
+  text-align: center;
+}
+.authForm {
+  border: none;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.label {
+  display: flex;
+  padding: 5px 0;
+  font-size: 22px;
+  justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .authForm {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 580px) {
+  .formWrap {
+    margin-top: 4px;
+  }
+  .authForm {
+    margin: 0;
+  }
+  .authForm h1 {
+    text-align: left;
+  }
+  .label {
+    justify-content: left;
+  }
+  .authBtn {
+    margin: 10px 0;
+  }
+}
+
+.labelIcons {
+  margin: 14px 5px 0 0px;
+}
+.authInput {
+  margin: 10px 0;
+  padding: 8px;
+  display: block;
+  width: 80%;
+  border-radius: var(--input-border-radius);
+  background-color: var(--input-bg-color);
+  transition: all 250ms var(--time-cubic);
+}
+.authInput[placeholder] {
+  font-size: var(--placeholder-font-size);
+  border: 1px solid transparent;
+  background-color: var(--input-bg-color);
+}
+.label:hover .authInput,
+.label:active .authInput,
+.label:focus-within .authInput {
+  border: 1px solid var(--hover-color);
+  color: var(--hover-color);
+  transform: scale(1.3);
+  cursor: pointer;
+}
+.label:hover .labelIcons,
+.label:active .labelIcons,
+.label:focus-within .labelIcons {
+  fill: var(--hover-color);
+}
+
+.authBtn {
+  display: block;
+  margin: 10px auto;
+  background-image: var(--btn-hover-bg);
+  border: 0;
+  border-radius: var(--input-border-radius);
+  box-shadow: var(--btn-hover-shadow);
+  box-sizing: border-box;
+  color: var(--input-bg-color);
+  padding: 8px 20px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.authBtn:hover {
+  transform: scale(1.1);
+  transition: all 250ms var(--time-cubic);
+}

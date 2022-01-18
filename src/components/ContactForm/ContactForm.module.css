@@ -1,0 +1,94 @@
+.contactsForm {
+  width: 100%;
+  
+}
+.label {
+  display: block;
+  margin: 15px 0;
+  position: relative;
+}
+.input {
+  position: relative;
+  border: 1px solid transparent;
+  padding: 8px;
+  display: block;
+  width: 80%;
+  margin: 4px auto;
+  background-color: var(--input-bg-color);
+  font-size: var(--placeholder-font-size);
+  border-radius: var(--input-border-radius);
+}
+.input[placeholder] {
+  font-size: var(--placeholder-font-size);
+  color: #0f1f38;
+  border: 1px solid transparent;
+  background-color: var(--input-bg-color);
+}
+
+.label:hover .input,
+.label:active .input,
+.label:focus-within .input {
+  border: 1px solid var(--hover-color);
+  color: var(--hover-color);
+  cursor: pointer;
+}
+.contactsFormBtn {
+  position: relative;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  height: 36px;
+  color: var(--main-color);
+  background-color: var(--input-bg-color);
+  border-radius: var(--input-border-radius);
+  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 10px -5px;
+}
+.contactsFormBtn:hover,
+.contactsFormBtn:active {
+  background-image: var(--btn-hover-bg);
+  color: var(--input-bg-color);
+  transition: all 250ms var(--time-cubic);
+}
+@media screen and (min-width: 568px) {
+  .input {
+    position: relative;
+    width: 60%;
+    margin: 4px 0;
+  }
+  .contactsForm {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .contactsForm {
+    width: 620px;
+  }
+  .input {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .input {
+    position: absolute;
+    left: 70px;
+    top: -5px;
+    width: 37%;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 1px rgb(0 0 0 / 14%), 0 2px 1px rgb(0 0 0 / 20%);
+    transition: all 250ms var(--time-cubic);
+  }
+  .contactsFormBtn {
+    font-weight: 700;
+    font-size: var(--placeholder-font-size);
+    top: -44px;
+    left: 320px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 1px rgb(0 0 0 / 14%), 0 2px 1px rgb(0 0 0 / 20%);
+    cursor: pointer;
+  }
+  .contactsForm {
+    width: 650px;
+    margin-left: 233px;
+  }
+  .label {
+    margin: 25px 0;
+  }
+}

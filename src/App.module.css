@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+:root {
+  --main-color: #2f2e33;
+  --hover-color: #4c5b64;
+  --input-bg-color: rgb(184, 184, 184);
+  --border-color: #d3d3d3;
+  --btn-hover-bg: linear-gradient(144deg, #929191, #7c8cb1 50%, #9b9a9a);
+  --btn-hover-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  --placeholder-font-size: 14px;
+  --input-border-radius: 6px;
+  --font-family: 'Poppins', sans-serif;
+  --main-font-weight: 300;
+  --titles-font-weight: 600;
+  --time-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}
+body {
+  background-image: url(./images/SmokeBackground.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.mainDiv {
+  background: url(./images/DeathNote.jpg) no-repeat;
+  background-size: 100%;
+  position: relative;
+  width: 60%;
+
+  margin: 50px auto;
+  min-height: 400px;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  border-radius: 30px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  background-clip: content-box;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  margin: 0;
+}
+h1,
+h2 {
+  font-weight: var(--titles-font-weight);
+}
+
+span {
+  margin-left: 50px;
+  margin-top: 20px;
+}

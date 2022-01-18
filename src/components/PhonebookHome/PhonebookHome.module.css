@@ -1,0 +1,32 @@
+.mainDiv {
+  width: 100%;
+  padding: 0 20px 20px 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.titleh2 {
+  margin-top: 20px;
+  display: block;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 580px) {
+  .mainDiv {
+    text-align: left;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .titleh2 {
+    text-align: center;
+    margin-top: -20px;
+  }
+  .title {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .mainDiv {
+    padding: 10px 30px 20px 30px;
+  }
+}
